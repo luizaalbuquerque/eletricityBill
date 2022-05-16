@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" >
+    <link rel="javascript" href="index.js">
+    <title>Login</title>
+</head>
+<body>
+<section class="area-login">
+     <div class="login">
+         <div>
+             <img src="images/logo.jpg">
+         </div>
+
+      <form method="POST">
+        <input type="text" name="name" id="email" onchange="validateFields()" placeholder="User" autofocus>
+        <input type="password" name="password" id= "password" onchange="validateFields()" placeholder="Password" autofocus>
+        <br>
+        <button type="button" disabled="true" id="login-button">Enter</button>
+     </form>
+     <p>Do you not have account?<a href="customerForm.html">Create Account</a></p>
+   </div>
+ </section>
+</body>
+</html>
