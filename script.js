@@ -24,11 +24,3 @@
   function validateEmail(email){
     return /\S+@S+\.\S+/.test(email)
   }
-
-  function isPasswordValid(){
-    const password = document.getElementById ("password").value;
-    if (!password){
-      return false;
-    }
-    return true;
-  }

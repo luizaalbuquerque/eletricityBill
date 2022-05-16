@@ -1,7 +1,8 @@
 body{
-    background-color: #1b1f27;
+    background-color: #142234;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
+
 }
 .area-login{
     display: flex;
@@ -17,7 +18,7 @@ body{
     flex-direction: column;
     border-radius: 10px;
     align-items: center;
-    background-color: #181920;
+    background-color: #6e8bdb;
     width: 355px;
     height:320px;
     padding: 35px;
@@ -30,12 +31,12 @@ body{
 
 .login input{
     margin-top: 10px;
-    background-color: #252a34;
+    background-color: #4771c5;
     border: none;
     height: 45px;
     outline: none;
     border-radius: 8px;
-    color: #cbd0f7;
+    color: #47484d;
     padding-left: 1opx;
 }
 
@@ -45,17 +46,18 @@ body{
 }
 
 input::placeholder{
-    color: #cbd0f7;
+    color: #585b6d;
     font-size: 14px;
 }
 
 form [type="button"]{
     display: block;
-    background-color: #5568FE;
+    background-color: #3247e8;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+    color: rgb(204, 197, 231);
 }
 
 p{
@@ -98,9 +100,15 @@ a{
 
 .main-form div input{
     width: 100%;
+  
+ 
 }
-
-
+.main-form ul, a{
+    color: #afcdf5;
+    list-style-type: none;
+    font-size: 22px;
+    justify-content: center;
+}
 
 
 

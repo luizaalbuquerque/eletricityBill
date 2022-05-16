@@ -1,17 +1,17 @@
 {
- "name": "E-Waste Collection",
+ "name": "Electricity Bill",
  "version": "1.0.0",
- "description": "E-Waste Collection APP",
+ "description": "Electricity Bill Package",
  "main": "index.js",
  "scripts": {
       "start": "electron ."
  },
- "author": "Audrith, Rafael, Aurelio, Rhenner",
+ "author": "Luiza Cavalcanti",
  "license": "ISC",
  "dependencies": {
  "electron": "^5.0.0",
  "electron-builder": "^5.0.3",
- "electron-packager": "^5.2.0",
+ "electron-packager": "^5.2.0"
  }
 
 }

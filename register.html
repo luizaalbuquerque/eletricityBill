@@ -3,22 +3,25 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css" >
     <link rel="javascript" href="index.js">
-    <title>Login</title>
+    <title>Register</title>
 </head>
 <body>
 <section class="area-login">
      <div class="login">
+       <img src="./images/logo.png">
          <div>
-             <img src="images/logo.jpg">
+           <h1>Register Account</h1>
+             
          </div>
 
       <form method="POST">
-        <input type="text" name="name" id="email" onchange="validateFields()" placeholder="User" autofocus>
-        <input type="password" name="password" id= "password" onchange="validateFields()" placeholder="Password" autofocus>
-        <br>
-        <button type="button" disabled="true" id="login-button">Enter</button>
+     <label for="phone">Input your phone number to create/login into the app account</label>
+        <input type="tel" id="phone" name="phone" placeholder="+83 456 3456" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br>
+              <button type="button" disabled="true" id="login-button">Continue</button>  
+               <p>Do you already have account?<a href="customerForm.html">Continue </a></p>
+  
      </form>
-     <p>Do you not have account?<a href="customerForm.html">Create Account</a></p>
+
    </div>
  </section>
 </body>
