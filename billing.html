@@ -1,148 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Billing</title>
-    <!-- <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
-        }
-        .box{
-            color: white;
-            position: absolute;
-            top: center;
-            left: center;
-            display: flex;
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            border-radius: 30px;
-            width: center;
-            
-        }
-        fieldset{
-            border: 3px solid dodgerblue;
-            align-items: center;
-            align-content: center;
-            width: auto;
-            
-        }
-        legend{
-            border: 1px solid dodgerblue;
-            padding: 10px;
-            text-align: center;
-            background-color: dodgerblue;
-            border-radius: 8px;
-        }
-        .inputBox{
-            position: relative;
-          
-        }
-        .inputUser{
-            background: none;
-            border: none;
-            border-bottom: 1px solid white;
-            outline: none;
-            color: white;
-            font-size: 15px;
-            width: 100%;
-            letter-spacing: 2px;
-        }
-        .labelInput{
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            pointer-events: none;
-            transition: .5s;
-        }
-        .inputUser:focus ~ .labelInput,
-        .inputUser:valid ~ .labelInput{
-            top: -20px;
-            font-size: 12px;
-            color: dodgerblue;
-        }
-        #date_birth{
-            border: none;
-            padding: 8px;
-            border-radius: 10px;
-            outline: none;
-            font-size: 15px;
-        }
-        #submit{
-            background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
-            width: 100%;
-            border: none;
-            padding: 15px;
-            color: white;
-            font-size: 15px;
-            cursor: pointer;
-            border-radius: 10px;
-        }
-        #submit:hover{
-            background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
-        }
-    </style> -->
+
 </head>
+
 <body>
+
     <div class="box">
         <form action="">
             <fieldset>
-                <legend><b>Electrical Billing Technology</b></legend> 
-             
-      <img class = "logo" src="./images/logo.png"  > <p>Welcome Mike,</p>
-             
-                <br>
-                <div class="inputBox">
+                <legend><b>Electrical Billing Technology</b></legend>
+
+                <img class="logo" src="./images/logo.png">
+                <p>Welcome Mike,</p>
+                <p>Billing Period for energy consuption</p><br>
+
+                <label for="date_start"><b>Start Date</b></label>
+                <input type="date" name="date_birth" id="date_start" required>
+                <label for="date_end"><b>End Date</b></label>
+                <input type="date" name="date_end" id="date_end" required> 
+                <small><label>*This period has to be 60 days</label></small>
+
+                <br> <br>
+<div class="inputBox">
                     <input type="number" name="rate" class="inputUser" required>
                     <label for="name" class="labelInput">unit rate</label>
-                </div>
-            
-                <p>Billing Period for energy consuption</p>
-             
-                <label for="date_start"><b>Start Date</b></label>
-                <input type="date" name="date_birth" id="date_start" required><br><br>
-                <label for="date_end"><b>End Date</b></label>
-                <input type="date" name="date_end" id="date_end" required> <br> <br>
-                <label>This period has to be 60 days</label> 
-            <br>
-            <p>Breakdown of the Bill</p>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="county" id="county" class="inputUser" required>
-                    <label for="county" class="labelInput">result</label>
                 </div><br>
-                   <input type="submit" name="submit" id="submit">
-                <br><br>
-                <p>Breakdown of the Bill</p>
-           
-             <p>Months:</p>
-             <table>
-      
-                <tr>
-                  <td>Cost</td>
-                  <td> € 300</td>
-            
-                </tr>
-                <tr>
-                  <td>Electricity</td>
-                  <td>56kWh</td>
+              
+                <input type="submit" name="Submit" id="submit">
+                <br><br><div class="inputBox">
+                    <input type="text" name="county" id="county" class="inputUser" required>
+                    <label for="county" class="labelInput" >result, VAT included</label>
+                </div><br>
+                <p>Breakdown of the Bill (VAT already included)</p>
                 
-                </tr>
-                <tr>
-                  <td>Standing Charges</td>
-                  <td>€ 0.04 *Per day</td>
-                
-                </tr>
-              </table>
+                <p>Of Months:</p>
+                <table>
+
+                    <tr>
+                        <td>Cost</td>
+                        <td> € 300</td>
+
+                    </tr>
+                    <tr>
+                        <td>Electricity</td>
+                        <td>56kWh</td>
+
+                    </tr>
+                    <tr>
+                        <td>Standing Charges</td>
+                        <td>€ 0.04 *Per day</td>
+
+                    </tr>
+                </table>
             </fieldset>
         </form>
-    
-          </div>
-    
+
     </div>
-    
+
+    </div>
+
 </body>
+
 </html>

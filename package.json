@@ -6,7 +6,7 @@
  "scripts": {
       "start": "electron ."
  },
- "author": "Luiza Cavalcanti",
+ "author": "Luiza Cavalcanti and Gabriel Antoniolli",
  "license": "ISC",
  "dependencies": {
  "electron": "^5.0.0",

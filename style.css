@@ -110,7 +110,11 @@ a{
     justify-content: center;
 }
 
-
+.logo{
+    float: right;
+    position: relative;
+    margin: 10px 15px 15px 10px; 
+}
 #submit{
     text-align: center;
 }

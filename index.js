@@ -10,7 +10,7 @@ app.on('ready', () => {
 
     });
 
-    mainWindow.loadURL(`file://${__dirname}/login.html`)
+    mainWindow.loadURL(`file://${__dirname}/start.html`)
 
 });
 
