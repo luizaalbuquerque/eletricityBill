@@ -134,3 +134,32 @@ table {
   tr:nth-child(even) {
     background-color: #23468d;
   }
+
+   /* navBar */
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(32, 43, 119);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(26, 46, 199);
+}
+
+.active {
+  background-color: #070918;
+} 
