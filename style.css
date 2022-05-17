@@ -56,16 +56,6 @@ a{
     margin-left: 10px;
 }
 
-
-.main_bg{
-    background-color: #1b1f27; 
-    max-width: 1280px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .logo{
     float: right;
     position: absolute;
@@ -74,13 +64,12 @@ a{
     right: 2rem;
     width: 5rem; 
 }
-#submit{
-    text-align: center;
-}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
   }
   
   td, th {
@@ -151,11 +140,17 @@ navbar{
     border: solid;
     border-color: black;
     padding: 30 rem auto auto 30 rem;
-    background-color: white; 
+    background-color:#5568FE;
+    ; 
     color: black;
 }
 #cardHeader{
+    font-size: 42px;
+}
+p{
+    text-align: center;
+}
+#cardLabel{
 
-    font-size: 36px;
-
+    font-style: bold;
 }

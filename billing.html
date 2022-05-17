@@ -30,12 +30,12 @@
                     <p id="cardHeader">Billing Period for energy consuption</p>
                     <br>
 
-                    <label> Please insert your unit rate here</label>
+                    <label id="cardLabel"> Please insert your unit rate</label>
             
                     <!---Where user insert its unir rate -->
-                    <br><br>
-                    
-                        <input id="unitRate" type="number" name="rate" class="inputUser" required>
+                    <br>
+                    <input id="unitRate" type="number" name="rate" class="inputUser" required>
+                    <br>
                     <br>
                 
                     <button onclick="priceWithVAT()"> submit </button>
@@ -44,7 +44,7 @@
                     <!--Result box-->
                     <div class="inputBox">
                         <span id="resultBox">hey</span>
-                        <label for="county" class="labelInput" >result, VAT included</label>
+                        <label for="county" class="labelInput" >result, VAT included</label>    
                     </div>
 
                 </div>
@@ -56,22 +56,18 @@
                     <tr>
                         <td>Months</td>
                         <td> Jan & Feb</td>
-
                     </tr>
                     <tr>
                         <td>Cost</td>
                         <td> € 300</td>
-
                     </tr>
                     <tr>
                         <td>Electricity</td>
                         <td>56kWh</td>
-
                     </tr>
                     <tr>
                         <td>Standing Charges</td>
                         <td>€ 0.04 *Per day</td>
-
                     </tr>
                 </table>
         
