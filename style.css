@@ -155,3 +155,12 @@ p{
     font-style: italic;
     
 }
+#submitButton{
+
+    border: black;
+    background-color: black;
+    color: white;
+    border-radius: 0.3em;
+    width: 100px;
+    height: 30px;
+}
