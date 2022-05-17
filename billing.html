@@ -7,42 +7,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Billing</title>
-
 </head>
 
 <body>
 
     <div class="box">
-        <form action="">
-            <fieldset>
-                <legend><p><b>Electricity Billing Technology</b></p></legend>
-                <ul>
-                    <li><a class="active" href="./billing.html">Billing</a></li>
-                    <li><a href="./register.html">Login</a></li>
-                    <li><a href="./settings.html">Settings</a></li>
-                 
-                  </ul>
+               <div class="header"> 
+                <h1 id="bigHead">Electricity Billing Technology</h1>
                 <img class="logo" src="./images/logo.png">
-                <p>Welcome Mike,</p>
-                <p>Billing Period for energy consuption</p>
+                <br>
+                <navbar>
+                    <ul>
+                        <li><a class="active" href="./billing.html">Billing</a></li>
+                        <li><a href="./register.html">Login</a></li>
+                        <li><a href="./settings.html">Settings</a></li>
+                    
+                    </ul>
+                </navbar>
+                
+                <div class="mainCard">
+                
+                    <p id="cardHeader">Billing Period for energy consuption</p>
+                    <br>
 
-                <label for="date_start"><p><b>Start Date</b></label>
-                <input type="date" name="date_birth" id="date_start" required></p>
-                <label for="date_end"><p><b>End Date</b></label>
-                <input type="date" name="date_end" id="date_end" required> </p>
-                <small><label>*This period has to be 60 days</label></small>
+                    <label> Please insert your unit rate here</label>
+            
+                    <!---Where user insert its unir rate -->
+                    <br><br>
+                    
+                        <input id="unitRate" type="number" name="rate" class="inputUser" required>
+                    <br>
+                
+                    <button onclick="priceWithVAT()"> submit </button>
+                    
+                    <br><br>
+                    <!--Result box-->
+                    <div class="inputBox">
+                        <span id="resultBox">hey</span>
+                        <label for="county" class="labelInput" >result, VAT included</label>
+                    </div>
 
-                <br> <br>
-<div class="inputBox">
-                    <input type="number" name="rate" class="inputUser" required>
-                    <label for="name" class="labelInput">unit rate</label>
-                </div><br>
-              
-                <input type="submit" name="Submit" id="submit">
-                <br><br><div class="inputBox">
-                    <input type="text" name="county" id="county" class="inputUser" required>
-                    <label for="county" class="labelInput" >result, VAT included</label>
-                </div><br>
+                </div>
+            </div>
+                <br>
                 <p>Breakdown of the Bill (VAT already included)</p>
               
                 <table>
@@ -67,12 +74,13 @@
 
                     </tr>
                 </table>
-            </fieldset>
-        </form>
+        
 
     </div>
 
     </div>
+   
+    <script src="script.js"></script>
 
 </body>
 
