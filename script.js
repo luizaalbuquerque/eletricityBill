@@ -25,7 +25,9 @@ function priceWithVAT(){
     const unitRate = document.getElementById('unitRate').value;
     const VAT = priceNoVAT() + (priceNoVAT() * (13.5/100));
     const result = document.getElementById('resultBox');
-    result.innerHTML = VAT;
+    result.innerHTML = VAT.toFixed(2);
+    document.getElementById('countLabel').style.visibility = "visible";
+    document.getElementById('euroIcon').style.visibility = "visible";
 }
 
   // function isEmailValid(){
