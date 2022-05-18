@@ -26,8 +26,11 @@ function priceWithVAT() {
   result.innerHTML = VAT.toFixed(2);
   document.getElementById('countLabel').style.visibility = "visible";
   document.getElementById('euroIcon').style.visibility = "visible";
+  document.getElementById("cost").innerHTML =VAT.toFixed(2);
+  document.getElementById("unit").innerHTML =unitRate;
+
 }
-document.getElementById("cost").innerHTML =VAT;
+
 
   // function isEmailValid(){
   //  const email = document.getElementById("email").value;
