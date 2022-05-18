@@ -1,5 +1,3 @@
-//Validate email and password fields
-
 function validateFields() {
   const emailValid = isEmailValid();
   const passwordValid = isPasswordValid().disable = !emailValid || !passwordValid;
@@ -20,15 +18,16 @@ function priceNoVAT() {
   return noVAT;
 }
 
-function priceWithVAT(){
+function priceWithVAT() {
 
-    const unitRate = document.getElementById('unitRate').value;
-    const VAT = priceNoVAT() + (priceNoVAT() * (13.5/100));
-    const result = document.getElementById('resultBox');
-    result.innerHTML = VAT.toFixed(2);
-    document.getElementById('countLabel').style.visibility = "visible";
-    document.getElementById('euroIcon').style.visibility = "visible";
+  const unitRate = document.getElementById('unitRate').value;
+  const VAT = priceNoVAT() + (priceNoVAT() * (13.5 / 100));
+  const result = document.getElementById('resultBox');
+  result.innerHTML = VAT.toFixed(2);
+  document.getElementById('countLabel').style.visibility = "visible";
+  document.getElementById('euroIcon').style.visibility = "visible";
 }
+document.getElementById("cost").innerHTML =VAT;
 
   // function isEmailValid(){
   //  const email = document.getElementById("email").value;
