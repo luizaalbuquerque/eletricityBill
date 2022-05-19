@@ -1,7 +1,10 @@
-const electron = require ('electron');
+
+// Electron connection
+const electron = require('electron');
 const { app, BrowserWindow } = require("electron")
 
 let mainWindow;
+// opening Html window 
 
 app.on('ready', () => {
 

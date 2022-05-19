@@ -16,6 +16,8 @@
             <h1 id="bigHead">Electricity Billing Technology</h1>
             <img class="logo" src="./images/logo.png">
             <br>
+            <!-- navegation bar -->
+
             <navbar>
                 <ul>
                     <li><a class="active" href="./billing.html">Billing</a></li>
@@ -32,12 +34,13 @@
 
                 <label id="cardLabel"> Please, input your number of units below:</label>
 
-                <!---Where user insert its unir rate -->
+                <!---Where user will insert its unir rate -->
                 <br>
                 <input id="unitRate" type="number" name="rate" class="inputUser">
                 <span id="errMessage"></span>
                 <br>
                 <br>
+                <!-- getting JS function for calc the total with VAT -->
 
                 <button onclick="priceWithVAT()" class="submitButton"> Calculate </button>
 
@@ -52,6 +55,7 @@
 
             </div>
         </div>
+        <!-- informative table, for display math breakdown -->
         <br>
         <p>Breakdown of the Bill (VAT already included)</p>
 
@@ -85,6 +89,7 @@
 
     </div>
 
+    <!-- JS connection -->
     <script src="script.js"></script>
 
 </body>
