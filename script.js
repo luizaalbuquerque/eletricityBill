@@ -2,6 +2,11 @@ const { dialog } = require('electron');
 const electron = require('electron');
 
 
+
+// const input = document.getElementById('myNumber');
+
+// input.setAttribute('required', '');
+
 function validateFields() {
   const emailValid = isEmailValid();
   const passwordValid = isPasswordValid().disable = !emailValid || !passwordValid;
@@ -33,6 +38,7 @@ function priceNoVAT() {
     document.getElementById('errMessage').style.visibility = 'hidden'
     return noVAT;
   }
+  
 }
 
 function priceWithVAT() {
@@ -46,6 +52,12 @@ function priceWithVAT() {
   document.getElementById('euroIcon').style.visibility = "visible";
   document.getElementById("cost").innerHTML =VAT.toFixed(2);
   document.getElementById("unit").innerHTML = unitRate;
+
+
+
+
+// document.getElementById("myNumber").required;
+
 }
 
 
