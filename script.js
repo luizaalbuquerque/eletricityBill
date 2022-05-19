@@ -2,7 +2,6 @@ const { dialog } = require('electron');
 const electron = require('electron');
 
 
-
 function validateFields() {
   const emailValid = isEmailValid();
   const passwordValid = isPasswordValid().disable = !emailValid || !passwordValid;

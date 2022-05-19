@@ -20,36 +20,36 @@
             <ul>
                 <li><a href="./billing.html">Billing</a></li>
                 <li><a href="./register.html">Login</a></li>
-                <li><a  href="./settings.html">Settings</a></li>
-                <li><a class="active"href="./ContactUs.html">Contact us</a></li>
+                <li><a href="./settings.html">Settings</a></li>
+                <li><a class="active" href="./ContactUs.html">Contact us</a></li>
 
             </ul>
             <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
                 <br>
                 <div>
-                    <p>First Name and Surname</p>
+
                     <div class="fcf-input-group">
-                        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                        <label>Full name</labek>
+                            <input type="text" id="Name" name="Name" class="fcf-form-control" required>
                     </div>
                 </div>
-
+                <br>
                 <div>
-                    <p>E-mail Address </p>
+
                     <div class="fcf-input-group">
+                        <label>E-mail Address </label>
                         <input type="email" id="Email" name="Email" class="fcf-form-control" required>
                     </div>
                 </div>
 
-                <div>
-                    <p>Please Input your message Below</p>
-                    <div class="fcf-input-group">
-                        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000"
-                            required></textarea>
-                    </div>
+                <div class="fcf-input-group">
+                    <h3>Please Input your message:</h3>
+                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000"
+                        required></textarea>
                 </div>
-                <div>
-                    <button type="submit" class="submitButton">Send Message</button>
-                </div>
+
+                <br>
+                <button type="submit" class="submitButton">Send Message</button>
 
 
             </form>

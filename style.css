@@ -138,8 +138,9 @@ span {
     width: auto;
 
 }
-.color{
-    color:aliceblue;
+
+.color {
+    color: aliceblue;
 }
 
 .mainCard {
@@ -178,17 +179,16 @@ p {
     border-radius: 0.3em;
     height: 30px;
 }
-#unitRate{
 
-    position:absolute;
+#unitRate {
+
+    position: absolute;
     left: 13.5rem;
 }
 
-#errMessage{
+#errMessage {
 
     color: red;
     position: relative;
     left: 12rem;
 }
-
-
