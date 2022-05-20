@@ -4,14 +4,18 @@
  "description": "Electricity Bill Package",
  "main": "index.js",
  "scripts": {
-      "start": "electron ."
+  "start": "electron ."
  },
  "author": "Luiza Cavalcanti and Gabriel Antoniolli",
  "license": "ISC",
  "dependencies": {
- "electron": "^5.0.0",
- "electron-builder": "^5.0.3",
- "electron-packager": "^5.2.0"
+  "electron": "^5.0.0",
+  "electron-builder": "^5.0.3",
+  "electron-packager": "^5.2.0",
+  "lunr": "^2.3.9",
+  "search": "^1.0.0"
+ },
+ "devDependencies": {
+  "mocha": "^10.0.0"
  }
-
 }
